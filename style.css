@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    background-color: rgb(252, 61, 156);
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid-item {
+    background-image: none;
+    height: 100vh;
+    width: 100vh;
+    overflow: hidden;
+    border-style: solid;
+    border-color: black;
+}
+
+.grid-1 {
+    background-color: rgb(131, 255, 7);
+}
+
+.grid-2 {
+    background-color: rgb(214, 113, 18);
+}
+
+.grid-3 {
+    background-color: rgb(0, 217, 255);
+}
+
+.grid-4 {
+    background-color: rgb(255, 0, 0);
+}
