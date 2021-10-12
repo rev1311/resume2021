@@ -34,10 +34,6 @@ nav {
     letter-spacing: 1px;
 }
 
-.nav-active {
-    transform: translateX(0%);
-}
-
 .nav-menu-btn {
     display: none;
     cursor: pointer;
@@ -48,6 +44,7 @@ nav {
     width: 25px;
     height: 3px;
     margin: 5px;
+    transition: all 0.3s ease;
 }
 
 .flex-container {
@@ -103,7 +100,7 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
+        width: 30%;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
     }
@@ -115,4 +112,29 @@ nav {
     .nav-menu-btn {
         display: block;
     }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navAnimate {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.shift .nav-bar-1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.shift .nav-bar-2 {
+    opacity: 0;
+}
+.shift .nav-bar-3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
