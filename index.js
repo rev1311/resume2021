@@ -1,3 +1,4 @@
+// function for mobile nav bar
 function navTransistion() {
     const menu = document.querySelector('.nav-menu-btn');
     const nav = document.querySelector('.nav-links');
