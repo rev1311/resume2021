@@ -143,6 +143,43 @@ nav {
     align-items: center;
 }
 
+.grid-2-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    font-size: 0.75em;
+    display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap; */
+	justify-content: flex-start;
+	align-items: flex-end;
+	align-content: stretch;
+}
+
+.grid-2-top {
+    top: 10%;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-2-left {
+    height: 40vh;
+    width: 40%;
+    text-align: left;
+    padding: 5%;
+    float: left;
+}
+
+.grid-2-right {
+    height: 40vh;
+    width: 40%;
+    text-align: left;
+    padding: 5%;
+    float: right;
+}
+
 .grid-3 {
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(125,125,125,1) 50%, rgba(255,255,255,1) 100%);
@@ -150,6 +187,16 @@ nav {
 
 .grid-4 {
     background-color: rgb(255, 255, 255);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: larger;
+    text-shadow: 1px 2px 5px rgb(101, 3, 146);
+    letter-spacing: 2px;
+    justify-content: center;
+    align-items: center;
 }
 
 /* @media screen and (max-width: 1024px){
